@@ -4,9 +4,15 @@ const externalData = document.querySelector("#API-data");
 
 
 
-txtData.addEventListener('click', fetchTxtData);
-jsonData.addEventListener('click', fetchJsonData)
-externalData.addEventListener("click", fetchExternalData);
+//EventListener function
+loadEventListners();
+
+//Load All EventListeners
+function loadEventListners(){
+    txtData.addEventListener('click', fetchTxtData);
+    jsonData.addEventListener('click', fetchJsonData)
+    externalData.addEventListener("click", fetchExternalData);
+}
 
 
 
